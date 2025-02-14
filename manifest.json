@@ -1,0 +1,9 @@
+{
+  "name": "바코드 생성기",
+  "description": "여러개 바코드를 한줄씩 생성",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
