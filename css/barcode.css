@@ -1,7 +1,8 @@
 #container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: left;
-  float: left;
+  display: block; /* 가로 배치 방지 */
+  text-align: left; /* 왼쪽 정렬 */
+}
+#container img {
+  display: block; /* 이미지가 세로로 정렬되도록 설정 */
+  margin-bottom: 10px; /* 이미지 간 간격 */
 }
