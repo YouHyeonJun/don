@@ -7,7 +7,7 @@ window.onload = function () {
 };
 
 function UserInputSort(userInput) {
-  let value = userInput.split(" ");
+  let value = userInput.split(/\s+/);
   return value;
 }
 
