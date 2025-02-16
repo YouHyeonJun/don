@@ -1,19 +1,14 @@
 window.onload = function () {
   document.getElementById("userInput").addEventListener("keyup", function () {
-    const userInput = document.getElementById("userInput");
-    const value = UserInputSort(userInput.value);
-    BarcodeGeneration(value);
+    BarcodeGeneration();
   });
 };
 
-function UserInputSort(userInput) {
-  let value = userInput.split(/\s+/);
-  return value;
-}
-
-function BarcodeGeneration(value) {
+function BarcodeGeneration() {
+  const value = document.getElementById("userInput").value.split(/\s+/);
   const container = document.getElementById("container");
   container.innerHTML = "";
+
   for (let i = 0; i < value.length; i++) {
     const img = document.createElement("img");
     img.id = `barcode${i}`;
